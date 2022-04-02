@@ -167,7 +167,7 @@ const Topbar = () => {
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span className="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
                         <img className="img-profile rounded-circle"
-                             src="img/undraw_profile.svg" />
+                             src="/assets/img/undraw_profile.svg" />
                     </a>
                     <div className="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                          aria-labelledby="userDropdown">
