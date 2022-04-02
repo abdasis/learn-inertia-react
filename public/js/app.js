@@ -5082,7 +5082,7 @@ var Topbar = function Topbar() {
             children: "Douglas McGee"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
             className: "img-profile rounded-circle",
-            src: "img/undraw_profile.svg"
+            src: "/assets/img/undraw_profile.svg"
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
           className: "dropdown-menu dropdown-menu-right shadow animated--grow-in",
