@@ -4,7 +4,7 @@ import "./Header.css";
 const Header = () => {
     return (
         <div>
-            <nav className="navbar custom-navbar navbar-expand-lg navbar-light bg-white border-bottom border-light">
+            <nav className="navbar custom-navbar navbar-expand-lg navbar-light bg-white border-bottom border-light fixed">
                 <div className="container">
                     <Link className="navbar-brand" href={route('welcome')}>Laziz.dev</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"

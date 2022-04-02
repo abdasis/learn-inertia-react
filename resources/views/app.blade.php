@@ -2,26 +2,41 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
         <title inertia>{{ config('app.name', 'Laravel') }}</title>
 
-        <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+        <!-- Custom fonts for this template-->
+        <link href="{{asset('assets/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
+        <link
+            href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+            rel="stylesheet">
 
-        <!-- Styles -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <!-- Scripts -->
+        <!-- Custom styles for this template-->
+        <link href="{{asset('assets/css/sb-admin-2.min.css')}}" rel="stylesheet">
+
         @routes
         <script src="{{ mix('js/app.js') }}" defer></script>
         @inertiaHead
     </head>
-    <body class="font-sans antialiased">
+    <body id="page-top">
         @inertia
 
-        @env ('local')
+        <!-- Bootstrap core JavaScript-->
+        <script src="{{asset('assets/vendor/jquery/jquery.min.js')}}"></script>
+        <script src="{{asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+        <!-- Core plugin JavaScript-->
+        <script src="{{asset('assets/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
+
+        <!-- Custom scripts for all pages-->
+        <script src="{{asset('assets/js/sb-admin-2.min.js')}}"></script>
+
+         @env ('local')
             <script src="http://localhost:8080/js/bundle.js"></script>
         @endenv
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>

@@ -1,0 +1,22 @@
+footer{
+    background: rgba( 255, 255, 255, 0.65 );
+    backdrop-filter: blur( 13px );
+    -webkit-backdrop-filter: blur( 13px );
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.taskbar{
+    max-width: 100%;
+    min-height: 100%;
+    padding-block: 7px;
+}
+
+.taskbar-menu ion-icon{
+    font-size: 28px;
+    padding-inline: 7px;
+}
